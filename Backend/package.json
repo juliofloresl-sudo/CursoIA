@@ -10,6 +10,7 @@
     "jsonwebtoken": "^9.0.3",
     "morgan": "^1.11.0",
     "swagger-ui-express": "^4.6.0",
+    "ws": "^8.21.0",
     "zod": "^4.4.3"
   },
   "devDependencies": {
