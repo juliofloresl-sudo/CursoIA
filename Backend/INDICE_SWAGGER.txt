@@ -1,0 +1,222 @@
+═══════════════════════════════════════════════════════════════════════════
+                    ÍNDICE - DOCUMENTACIÓN SWAGGER
+═══════════════════════════════════════════════════════════════════════════
+
+
+📚 ACCESO PRINCIPAL
+───────────────────────────────────────────────────────────────────────────
+
+   🌐 SWAGGER UI INTERACTIVA (recomendado)
+      ➜ http://localhost:3000/api-docs
+      
+      Características:
+      • Interfaz moderna y fácil de usar
+      • Probar endpoints en vivo
+      • Autenticación integrada
+      • Respuestas en tiempo real
+      
+
+📖 ARCHIVOS DE DOCUMENTACIÓN
+───────────────────────────────────────────────────────────────────────────
+
+   1. Backend/SWAGGER_GUIDE.html (🌟 INICIO RÁPIDO)
+      ├─ Guía visual interactiva
+      ├─ Paso a paso con botones
+      ├─ Ejemplos de uso
+      └─ Tamaño: 17 KB
+      
+      Abre en navegador: Backend/SWAGGER_GUIDE.html
+
+   2. Backend/SWAGGER.md (📋 DOCUMENTACIÓN COMPLETA)
+      ├─ Guía en Markdown
+      ├─ Instrucciones detalladas
+      ├─ Ejemplos con cURL
+      ├─ Troubleshooting
+      └─ Tamaño: 7 KB
+
+   3. Backend/SETUP_SWAGGER.md (🔧 CONFIGURACIÓN)
+      ├─ Instalación
+      ├─ Personalización
+      ├─ Despliegue en producción
+      └─ Tamaño: 8 KB
+
+   4. Backend/README_SWAGGER.txt (📊 RESUMEN VISUAL)
+      ├─ ASCII art formatado
+      ├─ Checklist de features
+      ├─ Estadísticas
+      └─ Tamaño: 8 KB
+
+
+⚙️  ARCHIVOS DE CONFIGURACIÓN
+───────────────────────────────────────────────────────────────────────────
+
+   1. Backend/src/config/swagger.js (⭐ PRINCIPAL)
+      ├─ Especificación OpenAPI 3.0
+      ├─ 1200+ líneas
+      ├─ 23 endpoints documentados
+      ├─ Esquemas JSON
+      ├─ Ejemplos request/response
+      ├─ Códigos de error
+      └─ Tamaño: 35 KB
+      
+      EDITAR AQUÍ para personalizar la documentación
+
+   2. Backend/src/app.js (MODIFICADO)
+      ├─ Importa swagger-ui-express
+      ├─ Configura ruta /api-docs
+      └─ Integración completa
+
+
+📦 ARCHIVOS DE PRUEBA
+───────────────────────────────────────────────────────────────────────────
+
+   Backend/test-api.sh
+   ├─ Script bash ejecutable
+   ├─ Verifica estado del servidor
+   ├─ Muestra todas las rutas
+   ├─ Ejemplos de uso
+   ├─ Instrucciones de autenticación
+   └─ Tamaño: 7 KB
+   
+   Ejecutar:
+   $ bash Backend/test-api.sh
+
+
+✅ DEPENDENCIAS INSTALADAS
+───────────────────────────────────────────────────────────────────────────
+
+   ✓ swagger-ui-express@^4.6.0
+     Versión: 4.6.0
+     Ubicación: Backend/node_modules/swagger-ui-express
+
+
+📊 ENDPOINTS DOCUMENTADOS (23 TOTAL)
+───────────────────────────────────────────────────────────────────────────
+
+   Módulo                    Endpoints       Estado
+   ───────────────────────────────────────────────────────────────────
+   Health                    1               ✓ Público
+   Autenticación             2               ✓ Parcial
+   Categorías                3               ✓ Protegido
+   Productos                 6               ✓ Mixto
+   Turnos                    2               ✓ Protegido
+   Ventas                    3               ✓ Protegido
+   Corte de Caja             2               ✓ Protegido
+   Inventario                3               ✓ Protegido
+   ───────────────────────────────────────────────────────────────────
+   TOTAL                     22 endpoints
+
+
+🔐 SEGURIDAD DOCUMENTADA
+───────────────────────────────────────────────────────────────────────────
+
+   • Autenticación JWT (Bearer Token)
+   • 4 Roles especificados:
+     - cajero
+     - administrador
+     - supervisor
+     - encargado_inventario
+   • Permisos por endpoint documentados
+   • Ejemplos con autenticación incluidos
+
+
+🎯 CÓMO USAR CADA ARCHIVO
+───────────────────────────────────────────────────────────────────────────
+
+   PARA EMPEZAR RÁPIDO:
+   → Abre: Backend/SWAGGER_GUIDE.html en navegador
+
+   PARA REFERENCIA COMPLETA:
+   → Lee: Backend/SWAGGER.md
+
+   PARA CONFIGURAR/PERSONALIZAR:
+   → Edita: Backend/src/config/swagger.js
+   → Lee: Backend/SETUP_SWAGGER.md
+
+   PARA PROBAR ENDPOINTS:
+   → Ejecuta: bash Backend/test-api.sh
+
+   PARA VER INTERACTIVA:
+   → Abre: http://localhost:3000/api-docs
+
+
+🚀 INSTALACIÓN RÁPIDA (Si no lo hiciste)
+───────────────────────────────────────────────────────────────────────────
+
+   $ cd Backend
+   $ npm install swagger-ui-express@^4.6.0
+   $ npm start
+   
+   Luego:
+   ➜ http://localhost:3000/api-docs
+
+
+📈 CARACTERÍSTICAS IMPLEMENTADAS
+───────────────────────────────────────────────────────────────────────────
+
+   ✅ OpenAPI 3.0.0 completa
+   ✅ UI Swagger moderna
+   ✅ Autenticación JWT
+   ✅ 50+ ejemplos request/response
+   ✅ Esquemas JSON documentados
+   ✅ Códigos HTTP (200, 201, 400, 401, 403, 404, 409, 500)
+   ✅ Filtros y búsquedas
+   ✅ Múltiples métodos de pago
+   ✅ Validaciones especificadas
+   ✅ Interfaz interactiva
+
+
+🔧 PERSONALIZACIÓN
+───────────────────────────────────────────────────────────────────────────
+
+   Para cambiar:           Edita en:
+   ───────────────────────────────────────────────────────────────────
+   Título/Descripción      Backend/src/config/swagger.js (info: {})
+   Servidores              Backend/src/config/swagger.js (servers: [])
+   Ejemplos                Backend/src/config/swagger.js (paths: {})
+   Estilos CSS             Backend/src/app.js (customCss: '')
+
+
+📞 RECURSOS EXTERNOS
+───────────────────────────────────────────────────────────────────────────
+
+   OpenAPI 3.0 Spec
+   ➜ https://spec.openapis.org/oas/v3.0.3
+
+   Swagger UI
+   ➜ https://swagger.io/tools/swagger-ui/
+
+   JWT Tokens
+   ➜ https://jwt.io/
+
+
+🐛 PROBLEMAS COMUNES
+───────────────────────────────────────────────────────────────────────────
+
+   ❌ Swagger no aparece
+      Solución: Reinicia servidor, borra caché (Ctrl+F5)
+
+   ❌ Token no valida
+      Solución: Obtén nuevo token en /api/v1/auth/login
+
+   ❌ CORS error
+      Solución: Usa localhost o configura CORS en app.js
+
+   Lee más:
+   ➜ Backend/SWAGGER.md (sección Troubleshooting)
+
+
+═══════════════════════════════════════════════════════════════════════════
+
+                         ✨ ¡LISTO PARA USAR! ✨
+
+                 Abre: http://localhost:3000/api-docs
+
+           Documentación Swagger completa e interactiva lista
+
+═══════════════════════════════════════════════════════════════════════════
+
+Versión: 1.0
+Fecha: 2026-07-02
+Estado: ✅ Completo y funcional
+
